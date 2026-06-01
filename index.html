@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Навколо Світу — Головна</title>
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/490/314/non_2x/travel-and-tourism-seamless-pattern-free-vector.jpg"); 
+    background-size: 350px; 
+    background-repeat: repeat;
+    background-position: center;
+    color: #2b2d42;
+}
+header{
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1 { margin: 0 0 10px 0; font-size: 32px; }
+nav{ background: #457b9d; min-height: 50px; }
+nav ul{ margin: 0; padding: 0; }
+nav li{ list-style: none; float: left; width: 120px; }
+nav a{ display: block; line-height: 50px; text-decoration: none; color: white; text-align: center; font-weight: bold; }
+nav a:hover{ background: #1d3557; }
+nav::after { content: ""; display: table; clear: both; }
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.main-content h2 { color: #e63946; }
+.main-content p { font-size: 17px; line-height: 1.6; text-align: justify; }
+
+form{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 450px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e1e5eb;
+    text-align: left;
+}
+form h3 { margin-top: 0; color: #1d3557; text-align: center; }
+label{ display: block; margin-top: 15px; font-weight: bold; color: #457b9d; }
+input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
+textarea { resize: none; height: 100px; }
+button { width: 100%; margin-top: 20px; padding: 12px; background: #e63946; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; }
+button:hover { background: #b71c1c; }
+
+footer{ background: #1d3557; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+footer p { margin: 5px 0; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Дивовижні куточки планети</h1>
+<p>Галерея незабутніх подорожей, що надихають на нові відкриття та пригоди</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Головна</a></li>
+<li><a href="about.html">Про нас</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+</ul>
+</nav>
+
+<div class="main-content">
+    <h2>Ласкаво просимо до нашого тревел-блогу!</h2>
+    <p>Світ надто великий і прекрасний, щоб проводити все життя в одному місці. Наш сайт створений для тих, хто марить далекими дорогами, новими знайомствами та незабутніми враженнями. Тут ми збираємо інформацію про найдивовижніші країни світу, ділимося яскравими фотографіями та допомагаємо спланувати мандрівку вашої мрії. Гортайте сторінки, надихайтеся та відкривайте планету разом з нами!</p>
+    
+    <form>
+        <h3>Залишити заявку на підбір туру</h3>
+        <label>Ваше ім'я:</label>
+        <input type="text" placeholder="Введіть ім'я" required>
+        
+        <label>Електронна пошта:</label>
+        <input type="email" placeholder="example@mail.com" required>
+        
+        <label>Яку країну мрієте відвідати?</label>
+        <textarea placeholder="Напишіть свої побажання..."></textarea>
+        
+        <button type="button">Надіслати мандрівникам</button>
+    </form>
+</div>
+
+<footer>
+<p>Ліцей "Львівський"</p>
+<p>Створено ученицею 10-Б класу (Ваше Прізвище Ім'я)</p>
+<p> &copy 2026</p>
+</footer>
+
+</body>
+</html>

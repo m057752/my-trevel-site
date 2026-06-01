@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox сторінка — Навколо Світу</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    /* Новий приємний фон із легким туристичним візерунком */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/490/314/non_2x/travel-and-tourism-seamless-pattern-free-vector.jpg"); 
+    background-size: 350px; 
+    background-repeat: repeat;
+    background-position: center;
+    color: #2b2d42;
+}
+
+header{
+    /* Колір глибокого синього моря */
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+nav{
+    /* Яскравий бірюзовий колір для меню */
+    background: #457b9d;
+    min-height: 50px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style: none;
+    float: left;
+    width: 120px;
+}
+
+nav a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover{
+    /* Темніший відтінок при наведенні */
+    background: #1d3557; 
+}
+
+/* Очищення флоатів для навігації */
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.intro-text {
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 25px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Забезпечує адаптивність для мобільних пристроїв */
+    width: 92%;
+    margin: 0 auto 20px auto;
+    gap: 20px;
+}
+
+.box{
+    flex: 1;
+    min-width: 280px; 
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e1e5eb;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+/* Легкий ефект при наведенні на картку */
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    color: #e63946; /* Акцентний колір для назв країн */
+    margin-top: 0;
+}
+
+.box img {
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.box p {
+    font-size: 14.5px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer{
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Дивовижні куточки планети</h1>
+<p>Галерея незабутніх подорожей, що надихають на нові відкриття та пригоди</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Головна</a></li>
+<li><a href="about.html">Про нас</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+</ul>
+</nav>
+
+<div class="intro-text">
+    <p>Подорожі — це єдина річ, купуючи яку, ми стаємо багатшими. Наш світ неймовірно різноманітний: від засніжених гірських вершин до безкраїх золотих пляжів та старовинних міст із багатовіковою історією. Кожна країна має свій унікальний колорит, традиції та дива природи. Ця сторінка створена для того, щоб ви могли зануритися в атмосферу найпопулярніших туристичних напрямків та обрати місце для своєї наступної незабутньої мандрівки.</p>
+</div>
+
+<!-- Перший ряд країн (Flexbox) -->
+<div class="container">
+<div class="box">
+<h2>Італія</h2>
+<img src="https://images.unsplash.com/photo-1529260830199-445528ff4d7b?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Італія">
+<p>Італія — це колиска європейської культури та мистецтва. Мандрівників з усього світу сюди приваблюють величний Рим із Колізеєм, романтична Венеція з її каналами та сонячна Тоскана. Окрім неймовірної архітектури, Італія славиться своєю гостинністю, мальовничими морськими узбережжями та, звичайно ж, шедеврами світової кухні — піцою, пастою та джелато.</p>
+</div>
+
+<div class="box">
+<h2>Японія</h2>
+<img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Японія">
+<p>Японія — країна, де прадавні традиції гармонійно поєднуються з технологіями майбутнього. Тут можна побачити величні буддійські храми, дзеркальні хмарочоси Токіо та засніжену вершину священної гори Фудзіяма. Найбільше туристів приїздить сюди навесні, коли вся країна вкривається ніжним рожевим цвітом сакури, створюючи казкову атмосферу.</p>
+</div>
+
+<div class="box">
+<h2>Єгипет</h2>
+<img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Єгипет">
+<p>Єгипет вабить таємницями давніх цивілізацій та неймовірною красою природи. Головні візитівки країни — це легендарні піраміди Гізи та загадковий Сфінкс. Окрім історичних екскурсій, мільйони мандрівників обирають Єгипет заради відпочинку на Червоному морі, яке вважається одним із найкращих місць у світі для дайвінгу завдяки своїм кораловим рифам.</p>
+</div>
+</div>
+
+<!-- Другий ряд країн (Flexbox) -->
+<div class="container">
+<div class="box">
+<h2>Франція</h2>
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Франція">
+<p>Франція асоціюється з романтикою, високою модою та витонченою архітектурою. Париж із Ейфелевою вежею та Лувром залишається мрією для мільйонів людей. Проте за межами столиці на вас чекають затишні лавандові поля Провансу, розкішне Лазурове узбережжя та старовинні королівські замки у долині річки Луари.</p>
+</div>
+
+<div class="box">
+<h2>Ісландія</h2>
+<img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Ісландія">
+<p>Ісландія — це країна льоду та вогню, яка вражає своїми космічними пейзажами. Тут можна побачити активні гейзери, величні водоспади, величезні льодовики та пляжі з чорним вулканічним піском. Мандрівники їдуть сюди, щоб відчути повне єднання з дикою природою, покупатися в термальних джерелах та на власні очі побачити магічне Північне сяйво.</p>
+</div>
+
+<div class="box">
+<h2>Мальдіви</h2>
+<img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?q=80&w=400&auto=format&fit=crop" width="250" height="180" alt="Мальдіви">
+<p>Мальдіви — це справжній тропічний рай на Землі. Архіпелаг складається з сотень невеличких коралових островів в Індійському океані. Сюди їдуть за ідеальним спокійним відпочинком: білосніжний шовковистий пісок, прозора бірюзова вода та затишні бунгало прямо над водою. Це чудове місце, щоб забути про буденну метушню.</p>
+</div>
+</div>
+
+<footer>
+<p>Ліцей "Львівський"</p>
+<!-- Синишин Марія 10-Б -->
+<p>Створено ученицею 10-Б класу (Ваше Прізвище Ім'я)</p>
+<p> &copy 2026</p>
+</footer>
+
+</body>
+</html>

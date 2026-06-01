@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Навколо Світу — Про нас</title>
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/490/314/non_2x/travel-and-tourism-seamless-pattern-free-vector.jpg"); 
+    background-size: 350px; 
+    background-repeat: repeat;
+    background-position: center;
+    color: #2b2d42;
+}
+header{
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h1 { margin: 0 0 10px 0; font-size: 32px; }
+nav{ background: #457b9d; min-height: 50px; }
+nav ul{ margin: 0; padding: 0; }
+nav li{ list-style: none; float: left; width: 120px; }
+nav a{ display: block; line-height: 50px; text-decoration: none; color: white; text-align: center; font-weight: bold; }
+nav a:hover{ background: #1d3557; }
+nav::after { content: ""; display: table; clear: both; }
+
+.intro-text {
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 25px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 0 auto 20px auto;
+    gap: 20px;
+}
+.box{
+    flex: 1;
+    min-width: 280px; 
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e1e5eb;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.box h2 { color: #457b9d; margin-top: 0; }
+.box img { border-radius: 50%; object-fit: cover; margin-bottom: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+.box p { font-size: 14.5px; line-height: 1.5; text-align: center; color: #555; }
+
+footer{ background: #1d3557; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+footer p { margin: 5px 0; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Дивовижні куточки планети</h1>
+<p>Галерея незабутніх подорожей, що надихають на нові відкриття та пригоди</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Головна</a></li>
+<li><a href="about.html">Про нас</a></li>
+<li><a href="gallery.html">Галерея</a></li>
+</ul>
+</nav>
+
+<div class="intro-text">
+    <h2>Наша команда мандрівників</h2>
+    <p>Ми — команда професійних гідів та затятих мандрівників, які об'їхали половину земної кулі. Наша мета — показати вам світ з найкращого боку, відкрити незвідані туристичні стежки та зробити кожну поїздку максимально комфортною та захопливою. Знайомтеся з нашими експертами!</p>
+</div>
+
+<div class="container">
+<div class="box">
+    <h2>Олександр</h2>
+    <!-- Аватарка експерта -->
+    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=180&height=180&auto=format&fit=crop" width="150" height="150" alt="Гід">
+    <p><strong>Головний експерт з Азії.</strong><br>Знає кожен таємний куточок у Токіо та Кіото. Проведе вас найкрутішими екскурсіями та розкаже все про культуру самураїв.</p>
+</div>
+
+<div class="box">
+    <h2>Олена</h2>
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=180&height=180&auto=format&fit=crop" width="150" height="150" alt="Гід">
+    <p><strong>Спеціаліст з Європи.</strong><br>Закохана в європейську архітектуру. Організовує найкращі романтичні тури у Париж та затишні куточки сонячної Тоскани.</p>
+</div>
+
+<div class="box">
+    <h2>Максим</h2>
+    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=180&height=180&auto=format&fit=crop" width="150" height="150" alt="Гід">
+    <p><strong>Експерт з екстремального туризму.</strong><br>Покаже вам справжню красу вулканів та гейзерів Ісландії. Знає, де знайти найкращі місця для дайвінгу в Червоному морі.</p>
+</div>
+</div>
+
+<footer>
+<p>Ліцей "Львівський"</p>
+<p>Створено ученицею 10-Б класу Синишин Марією</p>
+<p> &copy 2026</p>
+</footer>
+
+</body>
+</html>
